@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let value= parseFloat(prompt('Nhập số nguyên tố để kiểm tra'));
+    function checkPrime(value) {
+
+        if (value < 2) {
+            return false
+        }
+
+        for (let i = 2; i <value ; i++) {
+            if (value%i==0) {return false
+            }
+        } return true;
+    }
+
+    if (checkPrime(value)==false) {
+        alert('Không phải là số nguyên tố' )
+    } else {alert('là nguyên tố')}
+
+
+checkPrime()
+
+
+
+</script>
+
+</body>
+</html>
