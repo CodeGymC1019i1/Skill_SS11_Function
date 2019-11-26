@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+/*function soNguyenTo(ncheck) {
+    let i;
+
+    if(ncheck<2);
+        return false;
+
+    for (i=2;i <= ncheck/ 2;i++){
+        if(ncheck %i==0)
+            return false;
+    }
+    return true;
+
+}
+function inSoNguyenTo() {
+    let i = 2;
+    while(i<1000){
+        alert(soNguyenTo(i));
+        if (soNguyenTo(i)) {
+            alert(" " + i);
+        }
+        i++;
+    }
+}
+alert(soNguyenTo(2));
+//inSoNguyenTo();*/
+
+function isPrime(numberCheck) {
+    let i;
+
+    if (numberCheck < 2)
+        return false;
+
+        for (i = 2; i <= numberCheck / 2; i++)
+            if (numberCheck % i == 0)
+                return false;
+        return true;
+
+}
+
+function displayConsecutivePrimesWithCondition() {
+    let i = 0;
+
+    while (i < 1000) {
+        if (isPrime(i))
+            document.write(' ' + i);
+        i++;
+    }
+}
+
+displayConsecutivePrimesWithCondition();
+</script>
+</body>
+</html>
