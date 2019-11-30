@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let N;
+
+    function inputN() {
+        do {
+            N = prompt("Nhập số phần tử của mảng: ");
+        } while (N <= 0 || isNaN(N) == true);
+
+    }
+
+    function inputArray() {
+        for (let i = 0; i < N; i++) {
+            array[i] = prompt("nhap phan tu thu " + i + ":");
+        }
+
+    }
+
+    function displayArray() {
+        for (let i = 0; i < N; i++) {
+            document.write(array[i] + " ");
+        }
+
+    }
+
+    function main() {
+        inputN();
+        inputArray();
+        displayArray();
+    }
+
+    main();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let array = new Array();
+        let N;
+        //let array = []
+        //Nhập Mảng
+        N = prompt("Nhập số phần tử của mảng: ");
+        //for(let i = 0; i<N; i++){
+        for (let i=0;i<N;i++){
+            array[i]=prompt("Nhập Phần tử thứ " + i + ":")
+        }
+        //Hiển Thị Mảng
+        document.write("Mảng vừa nhập là: ")
+        for (let  i in array){
+            document.write(array[i] + " ");
+        }
+    </script>
+</body>
+</html>

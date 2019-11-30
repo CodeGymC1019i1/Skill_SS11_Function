@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            margin: auto;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <table border="1px solid black">
+        <tr>
+            <td id="td1" onclick="clickCell(id)"></td>
+            <td id="td2" onclick="clickCell(id)"></td>
+            <td id="td3" onclick="clickCell(id)"></td>
+        </tr>
+        <tr>
+            <td id="td4" onclick="clickCell(id)"></td>
+            <td id="td5" onclick="clickCell(id)"></td>
+            <td id="td6" onclick="clickCell(id)"></td>
+        </tr>
+        <tr>
+            <td id="td7" onclick="clickCell(id)"></td>
+            <td id="td8" onclick="clickCell(id)"></td>
+            <td id="td9" onclick="clickCell(id)"></td>
+        </tr>
+    </table>
+</div>
+<script>
+    clickCell(id){
+      let cell = document.getElementById(id)
+    }
+    if(turn = 0) {
+        cell.innerHTML = 'X'
+        turn = 1;
+    } else(turn = 1){
+        cell.innerHTML = '0'
+        turn = 0;
+    }
+</script>
+</body>
+</html>
